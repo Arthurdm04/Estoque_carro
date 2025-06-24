@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventário - WebVeículos</title>
+    <link rel="stylesheet" href="../public/css/inventario.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="main-container">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <img
+            src="../assets/logo.png"
+            alt="Logo WebVeículos"
+            class="sidebar-logo"
+          />
+          <span class="app-name">WEBVEÍCULOS</span>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li class="active">
+              <a href="#"> <i class="fas fa-warehouse"></i> Inventário </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-plus-circle"></i> Cadastrar Veículo
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-minus-circle"></i> Remover Veículo
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content-area">
+        <header class="top-header">
+          <div class="tabs">
+            <button class="tab-button active">Carros</button>
+            <button class="tab-button">Motos</button>
+          </div>
+          <div class="search-profile">
+            <div class="search-bar">
+              <input type="text" placeholder="Busque por marca ou modelo" />
+              <button><i class="fas fa-search"></i></button>
+            </div>
+            <button class="profile-button">
+              <i class="fas fa-user-circle"></i>
+            </button>
+          </div>
+        </header>
+
+        <section class="vehicle-list-section">
+          <div class="filters-container">
+            <div class="filter-group">
+              <span class="filter-label"
+                ><i class="fas fa-filter"></i> Filtrar por:</span
+              >
+              <div class="custom-dropdown" id="filterAnoDropdown">
+                <div class="dropdown-display" tabindex="0">
+                  <span class="selected-text">Ano</span>
+                  <i class="fas fa-chevron-down arrow-icon"></i>
+                </div>
+                <div class="dropdown-options">
+                  <div class="dropdown-option" data-value="Ano">Ano</div>
+                  <div class="dropdown-option" data-value="Mais Barato">
+                    Mais Barato
+                  </div>
+                  <div class="dropdown-option" data-value="Mais Caro">
+                    Mais Caro
+                  </div>
+                  <div class="dropdown-option" data-value="Maior Km">
+                    Maior Km
+                  </div>
+                  <div class="dropdown-option" data-value="Menor Km">
+                    Menor Km
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <span class="filter-label"
+                ><i class="fas fa-filter"></i> Filtrar por marca:</span
+              >
+              <div class="custom-dropdown" id="filterMarcaDropdown">
+                <div class="dropdown-display" tabindex="0">
+                  <span class="selected-text">Audi</span>
+                  <i class="fas fa-chevron-down arrow-icon"></i>
+                </div>
+                <div class="dropdown-options">
+                  <div class="dropdown-option" data-value="Audi">Audi</div>
+                  <div class="dropdown-option" data-value="BMW">BMW</div>
+                  <div class="dropdown-option" data-value="Chevrolet">
+                    Chevrolet
+                  </div>
+                  <div class="dropdown-option" data-value="Mercedes">
+                    Mercedes
+                  </div>
+                  <div class="dropdown-option" data-value="Nissan">Nissan</div>
+                  <div class="dropdown-option" data-value="Toyota">Toyota</div>
+                  <div class="dropdown-option" data-value="Volkswagen">
+                    Volkswagen
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="vehicle-cards-container"></div>
+
+          <p class="no-vehicles-message" style="display: none">
+            Nenhum veículo encontrado com os filtros aplicados.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script src="../app/controllers/inventarioController.js"></script>
+  </body>
+</html>
