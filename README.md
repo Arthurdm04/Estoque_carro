@@ -1,16 +1,16 @@
 # Estoque_carro
 # WebVeículos
 
-![Logo do Projeto](assets/logo.png) ## 📝 Descrição do Aplicativo
+## 📝 Descrição do Aplicativo
 
-[cite_start]O **WebVeículos** é um sistema projetado para otimizar o gerenciamento de estoque de veículos por lojistas e proporcionar uma plataforma prática para clientes e vendedores consultarem veículos disponíveis para compra. 
+O **WebVeículos** é um sistema projetado para otimizar o gerenciamento de estoque de veículos por lojistas e proporcionar uma plataforma prática para clientes e vendedores consultarem veículos disponíveis para compra. 
 
 ### Objetivo
-[cite_start]Facilitar o gerenciamento de estoque de veículos e a consulta de automóveis para compra. 
+Facilitar o gerenciamento de estoque de veículos e a consulta de automóveis para compra. 
 
 ### Público-Alvo
-* [cite_start]Lojistas de veículos novos e seminovos. 
-* [cite_start]Clientes interessados na compra de veículos. 
+Lojistas de veículos novos e seminovos. 
+Clientes interessados na compra de veículos. 
 
 ### Contexto de Uso
 Lojistas utilizarão o sistema para cadastrar e manter os dados de seus veículos atualizados. [cite_start]Clientes poderão buscar e visualizar informações de carros para compra ou negociação dentro da loja. 
@@ -19,11 +19,11 @@ Lojistas utilizarão o sistema para cadastrar e manter os dados de seus veículo
 
 O sistema WebVeículos oferece as seguintes funcionalidades principais:
 
-* [cite_start]**Cadastro e Login:** Permite o cadastro de funcionários e login facilitado, além de funcionalidades de login/cadastro para lojistas e clientes. 
-* [cite_start]**Cadastro de Veículos:** Lojistas podem cadastrar veículos com fotos e informações detalhadas. 
-* [cite_start]**Visualização e Filtro de Veículos:** Clientes podem visualizar a lista de veículos, com opções de filtro por marca, modelo, ano, preço, entre outros. 
-* [cite_start]**Detalhes do Veículo:** Clientes podem visualizar informações completas de um veículo, incluindo fotos e preço, e enviar mensagens ao lojista. 
-* **Remoção de Veículos:** Permite que lojistas removam veículos do anúncio.
+**Cadastro e Login:** Permite o cadastro de funcionários e login facilitado, além de funcionalidades de login/cadastro para lojistas e clientes. 
+**Cadastro de Veículos:** Lojistas podem cadastrar veículos com fotos e informações detalhadas. 
+**Visualização e Filtro de Veículos:** Clientes podem visualizar a lista de veículos, com opções de filtro por marca, modelo, ano, preço, entre outros. 
+**Detalhes do Veículo:** Clientes podem visualizar informações completas de um veículo, incluindo fotos e preço, e enviar mensagens ao lojista. 
+**Remoção de Veículos:** Permite que lojistas removam veículos do anúncio.
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -37,7 +37,7 @@ Este projeto está sendo desenvolvido utilizando as seguintes tecnologias front-
 ## 📁 Estrutura de Pastas
 
 O projeto segue um padrão de organização inspirado no modelo MVC (Model-View-Controller) para melhor separação de responsabilidades e manutenibilidade:
-/seu-projeto/
+
 ├── app/                  # Lógica da aplicação
 │   ├── controllers/      # Controladores JavaScript (ex: script.js, cadastro.js)
 │   └── models/           # Modelos JavaScript (ex: User.js - para validação de dados)
@@ -87,18 +87,3 @@ Contribuições são bem-vindas! Se você tiver sugestões, melhorias ou encontr
 4.  Envie para o `branch` original (`git push origin feature/minha-feature`).
 5.  Abra um `Pull Request`.
 
-## 📜 Licença
-
-Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes. ## 📧 Contato
-
-Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato com os autores:
-
-* Arthur Benevides Pacheco de Andrade
-* Arthur Dias Moresco
-* Caetano Frechiani Lima
-* Carlos Eduardo Oliveira Veloso e Tartuce
-* Guilherme Nevez
-* Ricardo Cezar de Moura Juca Junior
-* Orientador: Prof. João Pedro Macleure Nunes dos Santos
-
----
