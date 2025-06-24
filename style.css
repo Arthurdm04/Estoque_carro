@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* Cor de fundo clara para simular o branco */
+  margin: 0;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 40px 60px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Sutil sombra, se necessário */
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* Largura máxima para o container */
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: normal; /* A imagem parece ter um título mais leve */
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 0.9em;
+}
+
+/* Remove a borda do input[type="password"] aqui, ela será movida para o wrapper */
+.input-group input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Garante que padding não aumente a largura total */
+  font-size: 1em;
+}
+
+/* --- ESTAS SÃO AS PRINCIPAIS MUDANÇAS PARA O CAMPO DE SENHA --- */
+.password-input-wrapper {
+  position: relative; /* Mantém relative para o input, mas o posicionamento interno muda */
+  width: 100%;
+  display: flex; /* ATENÇÃO: Adicionado para usar flexbox */
+  align-items: center; /* ATENÇÃO: Alinha verticalmente os itens */
+  border: 1px solid #ccc; /* ATENÇÃO: A borda agora está aqui no wrapper */
+  border-radius: 4px; /* ATENÇÃO: Bordas arredondadas no wrapper */
+  box-sizing: border-box; /* Garante que padding não aumente a largura total do wrapper */
+}
+
+.password-input-wrapper input {
+  flex-grow: 1; /* ATENÇÃO: Faz o input ocupar todo o espaço restante */
+  padding: 10px;
+  border: none; /* ATENÇÃO: Remove a borda do input, pois está no wrapper */
+  outline: none; /* Remove o contorno padrão ao focar */
+  font-size: 1em;
+}
+
+.toggle-password {
+  /* ATENÇÃO: Removidos position, top, transform */
+  cursor: pointer;
+  color: #888;
+  padding-right: 10px; /* ATENÇÃO: Adiciona um padding à direita para o ícone */
+  font-size: 1.1em; /* Ajusta o tamanho do ícone, se necessário */
+  transition: color 0.2s ease; /* Adiciona uma transição suave na cor */
+}
+
+.toggle-password:hover {
+  color: #333; /* Muda a cor ao passar o mouse */
+}
+
+/* --- FIM DAS PRINCIPAIS MUDANÇAS --- */
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinhar à esquerda como na imagem */
+  margin-top: -10px; /* Ajuste para espaçamento */
+  margin-bottom: 25px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.checkbox-group label {
+  color: #555;
+  font-size: 0.9em;
+}
+
+.btn-login {
+  background-color: #d1d1d1; /* Cor cinza como na imagem */
+  color: #555; /* Cor do texto no botão */
+  padding: 12px 0;
+  border: none;
+  border-radius: 20px; /* Borda arredondada */
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #c0c0c0; /* Um pouco mais escuro ao passar o mouse */
+}
+
+.signup-link {
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.signup-link a {
+  color: #007bff; /* Cor azul padrão para links */
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
