@@ -72,7 +72,6 @@ Para configurar e rodar o projeto em sua máquina local:
 Os protótipos de interface foram desenvolvidos no Figma e servem como referência visual para o design e as funcionalidades do sistema. 
 
 * [Tela Inicial / Login](assets/prints/login)
-) 
 * [Tela de Cadastro](image_941166.png) 
 * [Tela de Filtro de Veículo](image_94677f.png) 
 * [Tela de Cadastro de Veículo](image_94677f.png) 
